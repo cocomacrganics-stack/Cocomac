@@ -20,6 +20,15 @@
     
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
 
@@ -47,8 +56,12 @@
                     <span id="cart-count" style="position: absolute; top: -8px; right: -8px; background: var(--color-forest); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600;">0</span>
                 </a>
             </nav>
-            <button class="mobile-toggle" aria-label="Toggle navigation">
-                <i data-lucide="menu" width="24" height="24"></i>
+            <a href="#" class="cart-link mobile-cart" aria-label="View Cart">
+                <i data-lucide="shopping-cart" width="24" height="24"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i data-lucide="menu" width="28" height="28"></i>
             </button>
         </div>
     </header>
@@ -60,7 +73,11 @@
         <a href="transparency.html">Transparency</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
-        <a href="#" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+        <a href="#" class="cart-link" style="display: flex; align-items: center; gap: 8px;">
+            <i data-lucide="shopping-cart" width="20" height="20"></i>
+            Cart (<span class="cart-count">0</span>)
+        </a>
+        <a href="#" id="mobile-checkout-btn" class="btn btn-primary" style="margin-top: 16px; text-align: center;">Checkout</a>
     </nav>
 
     <!-- ... -->

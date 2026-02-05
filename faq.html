@@ -71,6 +71,15 @@
     
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
 
@@ -104,6 +113,10 @@
                 </a>
             </nav>
 
+            <a href="#" class="cart-link mobile-cart" aria-label="View Cart">
+                <i data-lucide="shopping-cart" width="24" height="24"></i>
+                <span class="cart-count">0</span>
+            </a>
             <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                 <i data-lucide="menu" width="28" height="28"></i>
             </button>
@@ -119,6 +132,11 @@
         <a href="learn.html">Learn</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
+        <a href="#" class="cart-link" style="display: flex; align-items: center; gap: 8px;">
+            <i data-lucide="shopping-cart" width="20" height="20"></i>
+            Cart (<span class="cart-count">0</span>)
+        </a>
+        <a href="#" id="mobile-checkout-btn" class="btn btn-primary" style="margin-top: 16px; text-align: center;">Checkout</a>
     </nav>
 
     <!-- Hero -->

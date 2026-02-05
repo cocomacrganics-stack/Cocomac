@@ -320,6 +320,21 @@ header {
     transform: rotate(90deg);
 }
 
+/* Mobile Cart - visible on mobile only */
+.mobile-cart {
+    display: none;
+    position: relative;
+    color: var(--color-forest);
+    padding: 8px;
+}
+
+@media (max-width: 968px) {
+    .mobile-cart {
+        display: flex;
+        align-items: center;
+    }
+}
+
 /* Mobile Menu */
 .mobile-menu {
     position: fixed;

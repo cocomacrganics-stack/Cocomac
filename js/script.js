@@ -229,19 +229,56 @@ function updateCartUI() {
     });
 }
 
-function showAddedFeedback(button) {
+function showAddedFeedback(button, quantity = 1) {
     if (!button) return;
+    
+    // Prevent double-clicks during animation
+    if (button.disabled) return;
+    button.disabled = true;
     
     const originalText = button.innerText;
     const originalBackground = button.style.background;
     
-    button.innerText = "Added!";
-    button.style.background = "var(--color-soft-black)";
+    // Show success state with quantity
+    button.innerText = quantity > 1 ? `Added ${quantity}!` : "Added ✓";
+    button.style.background = "var(--color-forest)";
+    button.style.transform = "scale(0.95)";
+    button.style.transition = "all 0.15s ease";
     
+    // Animate the cart icon(s) on the page
+    animateCartIcon();
+    
+    // Reset button after delay - ready for more adds
     setTimeout(() => {
         button.innerText = originalText;
         button.style.background = originalBackground || "";
-    }, 1000);
+        button.style.transform = "";
+        button.disabled = false;
+    }, 1500);
+}
+
+// Animate cart icon to draw attention
+function animateCartIcon() {
+    const cartCounts = document.querySelectorAll('.cart-count');
+    const cartLinks = document.querySelectorAll('.cart-link');
+    
+    cartLinks.forEach(link => {
+        link.style.transition = 'transform 0.3s ease';
+        link.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+            link.style.transform = '';
+        }, 300);
+    });
+    
+    cartCounts.forEach(count => {
+        count.style.transition = 'transform 0.3s ease, background 0.3s ease';
+        count.style.transform = 'scale(1.3)';
+        count.style.background = 'var(--color-terracotta, #c75b39)';
+        setTimeout(() => {
+            count.style.transform = '';
+            count.style.background = '';
+        }, 400);
+    });
 }
 
 // ============================================
