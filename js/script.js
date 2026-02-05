@@ -112,7 +112,7 @@ const products = [
         price: 1600,
         ingredients: ["100% Raw Shea Nilotica Butter"],
         description: "Unlike hard West African shea, our Ugandan Shea Nilotica is naturally soft, creamy, and easy to spread. Deeply moisturizing and rich in vitamins A and E.",
-        badges: ["Raw Nilotica", "Fair Trade"],
+        badges: ["Raw Nilotica", "Ethically Sourced"],
         image: "images/products/shea-butter-jar-200g.png",
         inStock: true
     },
