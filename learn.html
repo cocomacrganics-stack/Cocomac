@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn | Cocomac Raw Organics</title>
+    <meta name="description" content="Educational content about natural skincare, ingredient science, and wellness. Empowering you with knowledge to make informed choices.">
+    <meta name="keywords" content="skincare education, natural beauty guide, ingredient science, skin health, wellness knowledge">
+    <link rel="icon" type="image/svg+xml" href="images/logos/SVG/logo_forest.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/254780980201?text=Hi%20Cocomac!%20I%20have%20a%20question%20about%20natural%20skincare." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" width="32" height="32"></i>
+        <div class="whatsapp-tooltip">Ask us anything!</div>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Cocomac Home">
+                <img src="images/logos/SVG/full_logo_dynamic.svg" alt="Cocomac Raw Organics">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="about.html">Our Story</a>
+                <a href="products.html">Shop</a>
+                <a href="ingredients.html">Ingredients</a>
+                <a href="transparency.html">Transparency</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-link">
+                    <i data-lucide="shopping-cart" width="24" height="24"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" id="checkout-btn" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">
+                    Checkout
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i data-lucide="menu" width="28" height="28"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="learn.html">Learn</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-simple">
+        <div class="container">
+            <span class="badge">Education Hub</span>
+            <h1>Knowledge Is Power</h1>
+            <p>We believe informed consumers make better choices. Explore our guides, science, and stories.</p>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 48px;">
+                <h2>Featured Articles</h2>
+                <p>Deep dives into skincare science and traditional wisdom</p>
+            </div>
+
+            <div class="pillars-grid">
+                <!-- Article 1 -->
+                <article class="pillar-card" style="text-align: left;">
+                    <span class="badge" style="margin-bottom: 16px;">Skin Science</span>
+                    <h3 style="margin-bottom: 12px;">Understanding Your Skin Barrier</h3>
+                    <p style="margin-bottom: 16px;">Your skin barrier is your first line of defense. Learn why 80% of skincare problems come from a damaged barrier, and how to repair it naturally.</p>
+                    <div style="margin-top: auto;">
+                        <h4 style="font-size: 14px; color: var(--color-forest); margin-bottom: 8px;">Key Takeaways:</h4>
+                        <ul style="font-size: 14px; padding-left: 16px; line-height: 1.8;">
+                            <li>Your barrier is made of lipids (fats) that prevent water loss</li>
+                            <li>Over-cleansing strips these essential fats</li>
+                            <li>Tallow and natural oils can restore barrier function</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="pillar-card" style="text-align: left;">
+                    <span class="badge" style="margin-bottom: 16px;">Ingredient Deep-Dive</span>
+                    <h3 style="margin-bottom: 12px;">Why We Use Tallow in Skincare</h3>
+                    <p style="margin-bottom: 16px;">Tallow might sound unusual, but it's the most biocompatible moisturizer available. Our ancestors used it for thousands of years - here's the science behind why it works.</p>
+                    <div style="margin-top: auto;">
+                        <h4 style="font-size: 14px; color: var(--color-forest); margin-bottom: 8px;">Key Takeaways:</h4>
+                        <ul style="font-size: 14px; padding-left: 16px; line-height: 1.8;">
+                            <li>Tallow's fatty acid profile matches human sebum</li>
+                            <li>Contains fat-soluble vitamins A, D, E, K</li>
+                            <li>Absorbs completely without clogging pores</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="pillar-card" style="text-align: left;">
+                    <span class="badge" style="margin-bottom: 16px;">Industry Truth</span>
+                    <h3 style="margin-bottom: 12px;">The Truth About "Natural" Labels</h3>
+                    <p style="margin-bottom: 16px;">The word "natural" is unregulated. Companies can (and do) use it on products containing synthetic chemicals. Here's how to read labels and avoid greenwashing.</p>
+                    <div style="margin-top: auto;">
+                        <h4 style="font-size: 14px; color: var(--color-forest); margin-bottom: 8px;">Key Takeaways:</h4>
+                        <ul style="font-size: 14px; padding-left: 16px; line-height: 1.8;">
+                            <li>"Natural" has no legal definition in cosmetics</li>
+                            <li>Look for certifications like COSMOS or Ecocert</li>
+                            <li>Shorter ingredient lists are usually better</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="pillar-card" style="text-align: left;">
+                    <span class="badge" style="margin-bottom: 16px;">Practical Guide</span>
+                    <h3 style="margin-bottom: 12px;">A Simple 3-Step Routine</h3>
+                    <p style="margin-bottom: 16px;">You don't need 10 products for great skin. Here's the minimalist routine that actually works, whether you're new to natural skincare or simplifying your current regimen.</p>
+                    <div style="margin-top: auto;">
+                        <h4 style="font-size: 14px; color: var(--color-forest); margin-bottom: 8px;">The 3 Steps:</h4>
+                        <ol style="font-size: 14px; padding-left: 16px; line-height: 1.8;">
+                            <li>Cleanse gently (oil or water-based)</li>
+                            <li>Hydrate (toner or mist)</li>
+                            <li>Seal (balm or oil)</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Content Categories -->
+    <section class="section-padding" style="background: var(--color-white);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2>Coming Soon</h2>
+                <p class="section-header">Content categories we're developing</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i data-lucide="microscope" width="40" height="40"></i></div>
+                    <h3>Skin Science</h3>
+                    <p>Understand how your skin works, what it actually needs, and why less is often more.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i data-lucide="alert-triangle" width="40" height="40"></i></div>
+                    <h3>Industry Truth</h3>
+                    <p>Exposing greenwashing, marketing manipulation, and predatory beauty standards.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i data-lucide="landmark" width="40" height="40"></i></div>
+                    <h3>Heritage & Tradition</h3>
+                    <p>The history and cultural significance of traditional African beauty ingredients.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i data-lucide="list-checks" width="40" height="40"></i></div>
+                    <h3>Practical Guides</h3>
+                    <p>Simple routines, product guides, and how-tos for natural skincare beginners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-padding text-center">
+        <div class="container">
+            <div style="max-width: 500px; margin: 0 auto;">
+                <h2>Be the First to Know</h2>
+                <p style="margin-top: 16px;">Subscribe to get notified when we publish new educational content.</p>
+                <form style="margin-top: 32px;" onsubmit="event.preventDefault(); alert('Thank you! You will be notified when new content is available.');">
+                    <div class="form-group" style="display: flex; gap: 12px;">
+                        <input type="email" placeholder="your@email.com" required style="flex: 1;">
+                        <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+                    </div>
+                    <p style="font-size: 13px; color: var(--color-charcoal); margin-top: 12px;">No spam, ever. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logos/SVG/logo_white.svg" alt="Cocomac Raw Organics" class="footer-logo">
+                    <p>Safe Beauty. Simple Health.<br> We are Kenya's trusted safe harbor for natural wellness.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cocomacraworganics/?hl=en" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Cocomac-Raw-Organics/100054202043801/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="https://wa.me/254780980201" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Face Care</a></li>
+                        <li><a href="products.html">Body Care</a></li>
+                        <li><a href="products.html">Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="transparency.html">Transparency</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i data-lucide="map-pin" width="18"></i> Nairobi, Kenya
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="mail" width="18"></i> hello@cocomac.co.ke
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="phone" width="18"></i> +254 780 980 201
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="copyright-year"></span> Cocomac Raw Organics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

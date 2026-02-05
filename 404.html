@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Cocomac Raw Organics</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="images/logos/SVG/logo_forest.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+        .error-content h1 {
+            font-size: 120px;
+            color: var(--color-forest);
+            line-height: 1;
+            margin-bottom: 24px;
+            opacity: 0.1;
+        }
+        .error-content h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logos/SVG/full_logo_dynamic.svg" alt="Cocomac Raw Organics">
+            </a>
+        </div>
+    </header>
+
+    <div class="container error-page">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Oops! Use the compass.</h2>
+            <p style="margin-bottom: 32px; font-size: 18px;">The page you are looking for seems to have gone off the map.</p>
+            <a href="index.html" class="btn btn-primary">Return Home</a>
+            <a href="products.html" class="btn btn-secondary" style="margin-left: 16px;">Shop Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; <span id="copyright-year">2026</span> Cocomac Raw Organics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

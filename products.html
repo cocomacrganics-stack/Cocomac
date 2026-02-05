@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Cocomac Raw Organics - Natural Skincare & Wellness</title>
+    <meta name="description" content="Explore Cocomac's natural beauty products: skincare, haircare, and bodycare made with indigenous Kenyan ingredients. Transparent, effective, and simple.">
+    <meta name="keywords" content="natural skincare, organic haircare, Kenyan beauty products, coconut oil, shea butter, baobab oil">
+    <link rel="icon" type="image/svg+xml" href="images/logos/SVG/logo_forest.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/254780980201?text=Hi%20Cocomac!%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" width="32" height="32"></i>
+        <div class="whatsapp-tooltip">Chat with us directly!</div>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Cocomac Home">
+                <img src="images/logos/SVG/full_logo_dynamic.svg" alt="Cocomac Raw Organics">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="about.html">Our Story</a>
+                <a href="products.html">Shop</a>
+                <a href="ingredients.html">Ingredients</a>
+                <a href="transparency.html">Transparency</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-link">
+                    <i data-lucide="shopping-cart" width="24" height="24"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" id="checkout-btn" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">
+                    Checkout
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i data-lucide="menu" width="28" height="28"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-simple">
+        <div class="container">
+            <span class="hero-tagline">Safe Beauty. Simple Health.</span>
+            <h1>The Essentials Collection</h1>
+            <p>Simple, effective natural beauty products made with indigenous Kenyan ingredients. Every product explained, every ingredient sourced with care.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-padding products">
+        <div class="container">
+            <!-- Filter and Search Controls -->
+            <div class="product-controls" style="margin-bottom: 32px;">
+                <div class="filter-buttons" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                    <button class="filter-btn btn-small active" data-category="all" onclick="setFilter('all')">All Products</button>
+                    <button class="filter-btn btn-small" data-category="face" onclick="setFilter('face')">Face</button>
+                    <button class="filter-btn btn-small" data-category="body" onclick="setFilter('body')">Body</button>
+                    <button class="filter-btn btn-small" data-category="hair" onclick="setFilter('hair')">Hair</button>
+                    <button class="filter-btn btn-small" data-category="wellness" onclick="setFilter('wellness')">Wellness</button>
+                </div>
+                
+                <div class="search-container" style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+                    <div class="search-input-wrapper" style="flex: 1; min-width: 200px; position: relative;">
+                        <input type="text" id="product-search" placeholder="Search products..." 
+                               oninput="setSearch(this.value)" 
+                               style="width: 100%; padding-left: 40px;">
+                        <i data-lucide="search" width="20" height="20" 
+                           style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--color-charcoal); opacity: 0.5;"></i>
+                    </div>
+                    <label class="checkbox-container" style="white-space: nowrap;">
+                        <input type="checkbox" id="stock-filter" onchange="renderProducts()">
+                        <span class="checkmark"></span>
+                        In Stock Only
+                    </label>
+                </div>
+            </div>
+            
+            <div id="product-grid" class="product-grid"></div>
+        </div>
+    </section>
+
+    <!-- Ingredient Spotlight -->
+    <section id="transparency" class="ingredient-spotlight bg-pattern-baobab" style="background-color: var(--color-sand);">
+        <div class="ingredient-content">
+            <span class="ingredient-tag">Ingredient Spotlight</span>
+            <h2>Baobab: The Tree of Life</h2>
+            <p class="ingredient-description">
+                We don't use fillers. We use powerhouses. Baobab is an indigenous African superfood that has sustained communities for centuries.
+            </p>
+
+            <div class="transparency-list">
+                <div class="transparency-item">
+                    <div class="check-icon"><i data-lucide="check" width="20" height="20"></i></div>
+                    <div><strong>Scientifically Proven:</strong> Reduces water loss and strengthens skin barrier.</div>
+                </div>
+                <div class="transparency-item">
+                    <div class="check-icon"><i data-lucide="check" width="20" height="20"></i></div>
+                    <div><strong>Ethically Sourced:</strong> From women's cooperatives in Senegal.</div>
+                </div>
+                <div class="transparency-item">
+                    <div class="check-icon"><i data-lucide="check" width="20" height="20"></i></div>
+                    <div><strong>Cultural Respect:</strong> We honor the traditional knowledge of this ingredient.</div>
+                </div>
+            </div>
+
+            <a href="about.html" class="btn btn-primary">Read Our Sourcing Story</a>
+        </div>
+        <div class="ingredient-image">
+            <img src="images/brand/baobab-tree-savannah.webp" alt="Baobab Tree in Savannah">
+        </div>
+    </section>
+
+    <!-- Value Proposition Banner -->
+    <section class="container" style="padding: 40px 0 0;">
+        <div style="background: linear-gradient(135deg, var(--color-forest) 0%, #3a7d64 100%); color: white; padding: 24px 32px; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; text-align: center;">
+            <i data-lucide="badge-check" width="28" height="28"></i>
+            <span style="font-size: 1.1rem;"><strong>Premium Quality, Local Prices</strong> — Our products cost 40-60% less than imported alternatives with the same quality ingredients</span>
+        </div>
+    </section>
+
+    <!-- Bulk Discounts Section -->
+    <section class="container" style="padding: 60px 0 80px;">
+        <div class="bulk-module">
+            <h2>Bulk & Wholesale Discounts</h2>
+            <p class="text-lead" style="margin-bottom: 32px;">Perfect for resellers, spas, gift sets, and conscious retailers.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 700px; margin: 0 auto 32px;">
+                <div style="background: var(--color-cream); padding: 24px; border-radius: var(--border-radius); text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest);">10%</div>
+                    <div style="font-size: 0.9rem; color: var(--color-charcoal);">5-9 units</div>
+                </div>
+                <div style="background: var(--color-cream); padding: 24px; border-radius: var(--border-radius); text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest);">12%</div>
+                    <div style="font-size: 0.9rem; color: var(--color-charcoal);">10-19 units</div>
+                </div>
+                <div style="background: var(--color-cream); padding: 24px; border-radius: var(--border-radius); text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-forest);">15%+</div>
+                    <div style="font-size: 0.9rem; color: var(--color-charcoal);">20+ units (wholesale)</div>
+                </div>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: var(--color-charcoal); margin-bottom: 24px;">Minimum order value: KES 5,000 for bulk discounts</p>
+            <a href="contact.html" class="btn btn-primary">Inquire About Bulk Orders</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logos/SVG/logo_white.svg" alt="Cocomac Raw Organics" class="footer-logo">
+                    <p>Safe Beauty. Simple Health.<br> We are Kenya's trusted safe harbor for natural wellness.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cocomacraworganics/?hl=en" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Cocomac-Raw-Organics/100054202043801/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="https://wa.me/254780980201" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Face Care</a></li>
+                        <li><a href="products.html">Body Care</a></li>
+                        <li><a href="products.html">Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="transparency.html">Transparency</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i data-lucide="map-pin" width="18"></i> Nairobi, Kenya
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="mail" width="18"></i> hello@cocomac.co.ke
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="phone" width="18"></i> +254 780 980 201
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="copyright-year"></span> Cocomac Raw Organics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

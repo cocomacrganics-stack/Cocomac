@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Cocomac Raw Organics</title>
+    <meta name="description" content="Frequently asked questions about Cocomac products, ordering, shipping, and natural skincare.">
+    <meta name="keywords" content="cocomac faq, natural skincare questions, ordering help, shipping kenya">
+    <link rel="icon" type="image/svg+xml" href="images/logos/SVG/logo_forest.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-section {
+            margin-bottom: 48px;
+        }
+        .faq-section h3 {
+            color: var(--color-forest);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-taupe);
+        }
+        .faq-item {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .faq-question {
+            padding: 20px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background var(--transition-speed) ease;
+        }
+        .faq-question:hover {
+            background: rgba(44, 95, 77, 0.03);
+        }
+        .faq-question i {
+            color: var(--color-forest);
+            transition: transform var(--transition-speed) ease;
+        }
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all var(--transition-speed) ease;
+        }
+        .faq-item.open .faq-answer {
+            padding: 0 24px 24px;
+            max-height: 500px;
+        }
+        .faq-answer p {
+            color: var(--color-charcoal);
+            line-height: 1.7;
+        }
+    </style>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/254780980201?text=Hi%20Cocomac!%20I%20have%20a%20question." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" width="32" height="32"></i>
+        <div class="whatsapp-tooltip">Can't find your answer? Ask us!</div>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Cocomac Home">
+                <img src="images/logos/SVG/full_logo_dynamic.svg" alt="Cocomac Raw Organics">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="about.html">Our Story</a>
+                <a href="products.html">Shop</a>
+                <a href="ingredients.html">Ingredients</a>
+                <a href="transparency.html">Transparency</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-link">
+                    <i data-lucide="shopping-cart" width="24" height="24"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" id="checkout-btn" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">
+                    Checkout
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i data-lucide="menu" width="28" height="28"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="learn.html">Learn</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-simple">
+        <div class="container">
+            <span class="badge">Help Center</span>
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our products, ordering, and shipping.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="section-padding">
+        <div class="container" style="max-width: 800px;">
+
+            <!-- New to Natural Beauty -->
+            <div class="faq-section">
+                <h3><i data-lucide="sparkles" width="24" style="display: inline; margin-right: 8px;"></i> New to Natural Beauty?</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes Cocomac different from other natural brands?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're radically transparent. Every ingredient is explained in plain English, every source is verified and traceable, and we never hide behind vague terms like "proprietary blend." Our products have 5-10 ingredients maximum, compared to the 20-40 found in typical "natural" products.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are natural products as effective as commercial ones?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Often more effective! Commercial products rely on cheap fillers and synthetic ingredients that can irritate skin over time. Our ingredients like baobab oil and grass-fed tallow are biochemically similar to your skin's natural oils, allowing for deeper absorption and nourishment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I choose the right product for my skin?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Start with our Tallow Balm - it works for almost all skin types including dry, oily, and combination. If you're unsure, WhatsApp us at +254 780 980 201 and we'll personally recommend products based on your specific concerns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Our Products -->
+            <div class="faq-section">
+                <h3><i data-lucide="package" width="24" style="display: inline; margin-right: 8px;"></i> About Our Products</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why are your ingredient lists so short?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Because effective skincare doesn't need 40 ingredients. Most commercial products are padded with water, fillers, preservatives, and marketing ingredients. We include only what your skin actually needs - nothing more, nothing less.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long do your products last?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unopened products last 12-18 months. Once opened, use within 6 months for optimal freshness. Store in a cool, dry place away from direct sunlight. Our tallow-based products are naturally stable and don't require synthetic preservatives.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your products suitable for sensitive skin?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our simple formulations are specifically designed to minimize irritation. We avoid common irritants like synthetic fragrances, essential oils in high concentrations, and harsh preservatives. That said, we recommend patch testing any new product.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I use these products during pregnancy?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most of our products are pregnancy-safe as they contain no retinoids, essential oils, or other ingredients typically avoided during pregnancy. However, we always recommend consulting your healthcare provider before using any new skincare during pregnancy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ordering & Delivery -->
+            <div class="faq-section">
+                <h3><i data-lucide="truck" width="24" style="display: inline; margin-right: 8px;"></i> Ordering & Delivery</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does ordering work?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Add products to your cart, then click Checkout. This opens WhatsApp with your order ready to send. We'll confirm availability, your delivery address, and payment details. You can pay via M-Pesa (preferred) or bank transfer.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does M-Pesa payment work?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After confirming your order via WhatsApp, we'll send you our M-Pesa details. Once you send payment, share the confirmation message with us. We'll process your order immediately upon verifying payment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are shipping costs and delivery times?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Nairobi:</strong> KES 200-350, delivered within 1-2 business days.<br>
+                        <strong>Other Major Towns:</strong> KES 350-500, delivered within 2-4 business days.<br>
+                        <strong>Free Shipping:</strong> Orders over KES 4,000 qualify for free delivery within Nairobi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you deliver to my area?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deliver nationwide across Kenya! For locations outside major towns, delivery may take 3-5 business days. WhatsApp us your location and we'll confirm delivery options and costs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your return policy?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 60-day satisfaction guarantee. If you're not happy with a product, contact us within 60 days for a full refund or exchange. Products must be at least 75% unused. We believe in our products enough to offer this guarantee.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety & Certification -->
+            <div class="faq-section">
+                <h3><i data-lucide="shield-check" width="24" style="display: inline; margin-right: 8px;"></i> Safety & Certification</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your products KEBS certified?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our products are certified by the Kenya Bureau of Standards (KEBS), meeting national quality and safety requirements. Our certification number is KEBS/CM/2024/00456. View our full certifications on our <a href="transparency.html#certifications" style="color: var(--color-forest);">Transparency page</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you test for safety?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Every batch is tested for microbial contamination, stability, and product consistency. We also conduct pH testing and allergen screening. All test results are documented and available upon request.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Where can I see test results?</span>
+                        <i data-lucide="chevron-down" width="20"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're implementing batch traceability where you can enter your product's batch code to see the complete certificate of analysis. This feature launches in Q2 2025. In the meantime, email hello@cocomac.co.ke with your batch code for test results.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="section-padding text-center" style="background: var(--color-white);">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p style="max-width: 500px; margin: 16px auto;">We're here to help! Reach out via WhatsApp for the fastest response.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                <a href="https://wa.me/254780980201" class="btn btn-primary">
+                    <i data-lucide="message-circle" width="20"></i> Chat on WhatsApp
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i data-lucide="mail" width="20"></i> Contact Form
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logos/SVG/logo_white.svg" alt="Cocomac Raw Organics" class="footer-logo">
+                    <p>Safe Beauty. Simple Health.<br> We are Kenya's trusted safe harbor for natural wellness.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cocomacraworganics/?hl=en" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Cocomac-Raw-Organics/100054202043801/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="https://wa.me/254780980201" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">Face Care</a></li>
+                        <li><a href="products.html">Body Care</a></li>
+                        <li><a href="products.html">Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="transparency.html">Transparency</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i data-lucide="map-pin" width="18"></i> Nairobi, Kenya
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="mail" width="18"></i> hello@cocomac.co.ke
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-lucide="phone" width="18"></i> +254 780 980 201
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="copyright-year"></span> Cocomac Raw Organics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const wasOpen = item.classList.contains('open');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                
+                // Open clicked item if it wasn't open
+                if (!wasOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
